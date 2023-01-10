@@ -63,6 +63,7 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:text="@string/material_calendar_monday"
+            android:contentDescription="Segunda-feira"
             android:textColor="@color/daysLabelColor" />
 
         <TextView
@@ -72,6 +73,7 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:text="@string/material_calendar_tuesday"
+            android:contentDescription="terça-feira"
             android:textColor="@color/daysLabelColor" />
 
         <TextView
