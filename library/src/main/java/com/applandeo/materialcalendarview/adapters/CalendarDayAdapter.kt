@@ -9,9 +9,12 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.applandeo.materialcalendarview.CalendarView
+import com.applandeo.materialcalendarview.R
 import com.applandeo.materialcalendarview.exceptions.InvalidCustomLayoutException
 import com.applandeo.materialcalendarview.utils.*
 import kotlinx.android.synthetic.main.calendar_view_day.view.*
+import java.text.DateFormat
+import java.text.SimpleDateFormat
 import java.util.*
 
 private const val INVISIBLE_IMAGE_ALPHA = 0.12f
@@ -45,8 +48,22 @@ class CalendarDayAdapter(
 
         setLabelColors(dayLabel, day)
         dayLabel.typeface = calendarProperties.typeface
+
+        val month = context.resources.getStringArray(R.array.material_calendar_months_array)[day[Calendar.MONTH]]
+        val year = day[Calendar.YEAR].toString()
+
         dayLabel.text = day[Calendar.DAY_OF_MONTH].toString()
 
+        val formatter: DateFormat = SimpleDateFormat("EEEE")
+        val dayOfWeekString: String = formatter.format(day.time)
+
+        dayLabel.contentDescription = context.resources.getString(
+            R.string.material_calendar_content_description,
+            day[Calendar.DAY_OF_MONTH],
+            dayOfWeekString,
+            month,
+            year
+        )
         return dayView
     }
 

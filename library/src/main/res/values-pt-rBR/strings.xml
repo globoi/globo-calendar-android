@@ -8,6 +8,16 @@
     <string name="material_calendar_saturday">S</string>
     <string name="material_calendar_sunday">D</string>
 
+    <array name="material_calendar_day_abbreviations_array">
+        <item>@string/material_calendar_sunday</item>
+        <item>@string/material_calendar_monday</item>
+        <item>@string/material_calendar_tuesday</item>
+        <item>@string/material_calendar_wednesday</item>
+        <item>@string/material_calendar_thursday</item>
+        <item>@string/material_calendar_friday</item>
+        <item>@string/material_calendar_saturday</item>
+    </array>
+
     <array name="material_calendar_months_array">
         <item>Janeiro</item>
         <item>Fevereiro</item>
@@ -26,4 +36,7 @@
     <string name="material_calendar_today_button">Hoje</string>
     <string name="material_calendar_positive_button">OK</string>
     <string name="material_calendar_negative_button">Cancel</string>
+    <string name="material_calendar_content_description">%d, %s, %s, %s</string>
+    <string name="material_calendar_back_button_content_description">Mês anterior, voltar</string>
+    <string name="material_calendar_next_button_content_description">Próximo mês, avançar</string>
 </resources>

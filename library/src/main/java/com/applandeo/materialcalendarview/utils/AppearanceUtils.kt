@@ -6,7 +6,6 @@ import android.view.View
 import com.applandeo.materialcalendarview.R
 import kotlinx.android.synthetic.main.calendar_view.view.*
 
-
 /**
  * Created by Applandeo Team.
  */
