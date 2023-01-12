@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable
 import android.view.View
 import com.applandeo.materialcalendarview.R
 import kotlinx.android.synthetic.main.calendar_view.view.*
+import java.util.*
 
 /**
  * Created by Applandeo Team.
@@ -14,9 +15,11 @@ internal fun View.setAbbreviationsLabels(color: Int, firstDayOfWeek: Int) {
     val labels = getAbbreviationsTextViews()
 
     val abbreviations = context.resources.getStringArray(R.array.material_calendar_day_abbreviations_array)
+    val descriptionAbbreviations = context.resources.getStringArray(R.array.material_calendar_day_description_array)
 
     labels.forEachIndexed { index, label ->
         label.text = abbreviations[(index + firstDayOfWeek - 1) % 7]
+        label.contentDescription = descriptionAbbreviations[(index + firstDayOfWeek - 1) % 7]
 
         if (color != 0) {
             label.setTextColor(color)

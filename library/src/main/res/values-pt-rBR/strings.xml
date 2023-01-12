@@ -8,6 +8,16 @@
     <string name="material_calendar_saturday">S</string>
     <string name="material_calendar_sunday">D</string>
 
+    <array name="material_calendar_day_description_array">
+        <item>Domingo</item>
+        <item>Segunda-feira</item>
+        <item>Terça-feira</item>
+        <item>Quarta-feira</item>
+        <item>Quinta-feira</item>
+        <item>Sexta-feira</item>
+        <item>Sábado</item>
+    </array>
+
     <array name="material_calendar_day_abbreviations_array">
         <item>@string/material_calendar_sunday</item>
         <item>@string/material_calendar_monday</item>
